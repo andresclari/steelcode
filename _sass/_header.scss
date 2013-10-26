@@ -1,0 +1,141 @@
+.header {
+  position: fixed;
+  height: 100%;
+  width: 20em;
+  background: $black-color;
+  color: white;
+  text-align: center;
+
+  & .my-info {
+    margin-top: 1em;
+    color: white;
+    font-size: 18px;
+
+    & h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.7em;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    & h3 {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 1em;
+      line-height: 27px;
+    }
+
+    & img {
+      height: auto;
+      width: 9em;
+    }
+  }
+
+  & .social-sites {
+    margin-top: 2em;
+
+    & a {
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      text-indent: -9999px;
+      margin-right: 15px;
+      width: 28px;
+      height: 28px;
+      transition: 0.3s;
+    }
+
+    & .facebook {
+      background: url('/img/social/facebook.png') center no-repeat #3b5998;
+      border: 1px solid #3B5998;
+
+      &:hover {
+        border: 1px solid #2d4373;
+      }
+    }
+
+    & .google {
+      background: url('/img/social/google.png') center no-repeat #C83D20;
+      border: 1px solid #C83D20;
+
+      &:hover {
+        border: 1px solid #9c3019;
+      }
+    }
+
+    & .twitter {
+      background: url('/img/social/twitter.png') center no-repeat #55CFF8;
+      border: 1px solid #55CFF8;
+
+      &:hover {
+        border: 1px solid #24c1f6;
+      }
+    }
+
+    & .github {
+      background: url('/img/social/github.png') center no-repeat #3B5998;
+      border: 1px solid #3B5998;
+
+      &:hover {
+        border: 1px solid #909ab6;
+      }
+    }
+
+    & .linkedin {
+      background: url('/img/social/linkedin.png') center no-repeat #afb6ca;
+      border: 1px solid #afb6ca;
+
+      &:hover {
+        border: 1px solid #003854;
+      }
+    }
+
+    & .rss {
+      background: url('/img/social/rss.png') center no-repeat #EF7522;
+      border: 1px solid #EF7522;
+
+      &:hover {
+        border: 1px solid #cf5d0f;
+      }
+    }
+  }
+
+  & .navbar {
+    position: fixed;
+    bottom: 5em;
+    left: 3em;
+    text-align: left;
+    width: 12em;
+
+    & li a {
+      font-family: 'Oxygen', sans-serif;
+      font-weight: bold;
+      line-height: 26px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+
+      &:hover {
+        color: #AAA;
+      }
+
+      &:visited {
+        color: white;
+      }
+    }
+  }
+
+  & .header-footer {
+    position: fixed;
+    bottom: 1em;
+    left: 2em;
+    text-align: left;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+
+    & span {
+      display: block;
+    }
+  }
+
+}
+

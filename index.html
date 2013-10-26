@@ -3,11 +3,15 @@ layout: default
 title: SteelCode
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="carousel">
+    <img class="welcome-img" src="{{ site.baseurl }}/img/carousel.jpg" />
 </div>
+
+<div class="view-content">
+    <section class="welcome-text">
+    Mobile and web developer with over 5 years of experience, specialized in Android development, Ruby on Rails, PHP, and Wordpress based sites and Web Apps.
+
+    Andres Clari is a mobile and web developer with over 5 years of experience, specialized in Android development, Ruby on Rails, PHP, and Wordpress based sites and web apps. Founder of SteelCode Consulting where he helps bring the best ideas to reality with design and craft.
+    </section>
+</div>
+

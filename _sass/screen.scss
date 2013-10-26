@@ -4,3 +4,99 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+$black-color: #333;
+
+body, html {
+  color: $black-color;
+  font-size: 16px;
+}
+
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+.logo > a > img {
+  height: auto;
+  width: 16em;
+  margin-top: 2em;
+}
+
+@import "header";
+
+
+.container {
+  margin-left: 22em;
+  max-width: 730px;
+}
+
+.carousel {
+  margin-left: -2em;
+  margin-bottom: 2em;
+}
+
+.welcome-img {
+  height: auto;
+  width: 44em;
+}
+
+.view-content {
+  font-family: 'Oxygen', sans-serif;
+  color: $black-color;
+  max-width: 700px;
+  margin-right: 1.5em;
+  text-align: justify;
+
+  h1 {
+    // font-family: 'Oswald', sans-serif;
+    color: $black-color;
+    font-size: 4em;
+    margin-bottom: 0.7em;
+  }
+
+  & .meta {
+    margin: {
+      top: 0.7em;
+      bottom: 2.7em;
+    }
+  }
+
+  & .post {
+    line-height: 24px;
+    font-size: 17px;
+
+    & div {
+      margin: {
+        top: 1.5em;
+        bottom: 1.5em;
+      }
+    }
+  }
+}
+
+
+.posts-index {
+  & ul li a {
+    font-size: 2em;
+    color: $black-color;
+    text-decoration: none;
+    line-height: 72px;
+  }
+
+  & p {
+    line-height: 24px;
+  }
+}
+
+.welcome-text {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+
