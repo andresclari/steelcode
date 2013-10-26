@@ -6,6 +6,13 @@
 @import "compass/reset";
 
 $black-color: #333;
+$max-width: 1200px;
+$min-height: 600px;
+$height-break: 785px;
+$height-break2: 730px;
+$width-break: 820px;
+$width-break2: 600px;
+$width-break3: 480px;
 
 body, html {
   color: $black-color;
@@ -21,34 +28,70 @@ h2 {
   font-size: 3em;
 }
 
-.logo > a > img {
-  height: auto;
-  width: 16em;
-  margin-top: 2em;
+.logo {
+  & img {
+    height: auto;
+    width: 16em;
+    margin-top: 2em;
+  }
+
+  @media screen and (max-width: $width-break) {
+    display: inline-block;
+    vertical-align: middle;
+    
+    & img {
+      width: 12em;
+      margin-top: 0;
+    }
+  }
+  @media screen and (max-width: $width-break3) {
+    & img {
+        width: 10em;
+    }
+  }
 }
 
 @import "header";
 
 
 .container {
-  margin-left: 22em;
-  max-width: 730px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $width-break) {
+    max-width: inherit;
+    margin: 0;
+  }
 }
 
 .carousel {
   margin-left: -2em;
   margin-bottom: 2em;
+
+  @media screen and (max-height: $min-height) {
+    margin-left: 0;
+    text-align: right;
+  }
 }
 
 .welcome-img {
-  height: auto;
-  width: 44em;
+  height: 30em;
+  width: 100%;
+
+  @media screen and (max-width: $max-width) {
+    height: auto;
+  }
+  @media screen and (max-height: $min-height) {
+    height: auto;
+    width: 55%;
+  }
 }
 
 .view-content {
   font-family: 'Oxygen', sans-serif;
   color: $black-color;
-  max-width: 700px;
+  // max-width: 700px;
+  margin-left: 22em;
   margin-right: 1.5em;
   text-align: justify;
 
@@ -74,6 +117,21 @@ h2 {
       margin: {
         top: 1.5em;
         bottom: 1.5em;
+      }
+    }
+  }
+
+  @media screen and (max-width: $width-break) {
+    margin-top: 2em;
+    margin-left: 1.5em;
+
+    & .carousel {
+      text-align: center;
+      margin-left: 0;
+
+      & img {
+        width: auto;
+        height: 10em;
       }
     }
   }
