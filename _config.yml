@@ -5,7 +5,6 @@ markdown: redcarpet
 pygments: false
 timezone: Europe/Madrid
 encoding: UTF-8
-baseurl: /steelcode
 
 permalink: /blog/:year/:month/:day/:title
 paginate: 15
