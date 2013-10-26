@@ -1,3 +1,5 @@
 name: SteelCode
 markdown: redcarpet
 pygments: false
+baseurl: /steelcode
+
