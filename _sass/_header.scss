@@ -5,6 +5,7 @@
   background: $black-color;
   color: white;
   text-align: center;
+  box-shadow: 0 0 3px #222;
 
   & .my-info {
     margin-top: 1em;
@@ -115,7 +116,7 @@
       font-size: 20px;
 
       &:hover {
-        color: #AAA;
+        color: #AAA !important;
       }
 
       &:visited {
