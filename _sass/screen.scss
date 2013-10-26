@@ -6,6 +6,8 @@
 @import "compass/reset";
 
 $black-color: #333;
+$link-color: #AD0303;
+
 $max-width: 1200px;
 $min-height: 600px;
 $height-break: 785px;
@@ -90,10 +92,27 @@ h2 {
 .view-content {
   font-family: 'Oxygen', sans-serif;
   color: $black-color;
-  // max-width: 700px;
+  text-shadow: 0px 0px 1px #ccc;
   margin-left: 22em;
   margin-right: 1.5em;
   text-align: justify;
+
+  a {
+    color: $link-color;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: #ccc;
+    }
+    &:visited {
+      color: $link-color;
+    }
+  }
+
+  p {
+    margin-bottom: 1.3em;
+  }
 
   h1 {
     // font-family: 'Oswald', sans-serif;
@@ -157,4 +176,8 @@ h2 {
   line-height: 28px;
 }
 
+.about-img {
+  float: left;
+  padding-right: 1.5em;
+}
 
