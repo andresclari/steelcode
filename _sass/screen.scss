@@ -147,6 +147,16 @@ h2 {
     }
   }
 
+  & .post-share {
+    margin-top: 3em;
+
+    & h4 {
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 1.5em;
+    }
+  }
+
   & #disqus_thread {
     margin-top: 5em;
   }

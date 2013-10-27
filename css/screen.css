@@ -458,6 +458,16 @@ h2 {
   margin-bottom: 1.5em;
 }
 /* line 150, ../_sass/screen.scss */
+.view-content .post-share {
+  margin-top: 3em;
+}
+/* line 153, ../_sass/screen.scss */
+.view-content .post-share h4 {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 1.5em;
+}
+/* line 160, ../_sass/screen.scss */
 .view-content #disqus_thread {
   margin-top: 5em;
 }
@@ -467,38 +477,38 @@ h2 {
     margin-top: 2em;
     margin-left: 1.5em;
   }
-  /* line 158, ../_sass/screen.scss */
+  /* line 168, ../_sass/screen.scss */
   .view-content .carousel {
     text-align: center;
     margin-left: 0;
   }
-  /* line 162, ../_sass/screen.scss */
+  /* line 172, ../_sass/screen.scss */
   .view-content .carousel img {
     width: auto;
     height: 10em;
   }
 }
 
-/* line 172, ../_sass/screen.scss */
+/* line 182, ../_sass/screen.scss */
 .posts-index ul li a {
   font-size: 2em;
   color: #333333;
   text-decoration: none;
   line-height: 72px;
 }
-/* line 179, ../_sass/screen.scss */
+/* line 189, ../_sass/screen.scss */
 .posts-index p {
   line-height: 24px;
 }
 
-/* line 184, ../_sass/screen.scss */
+/* line 194, ../_sass/screen.scss */
 .welcome-text {
   font-size: 20px;
   font-weight: bold;
   line-height: 28px;
 }
 
-/* line 190, ../_sass/screen.scss */
+/* line 200, ../_sass/screen.scss */
 .about-img {
   float: left;
   padding-right: 1.5em;
