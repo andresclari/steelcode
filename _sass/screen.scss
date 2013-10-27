@@ -147,6 +147,10 @@ h2 {
     }
   }
 
+  & #disqus_thread {
+    margin-top: 5em;
+  }
+
   @media screen and (max-width: $width-break) {
     margin-top: 2em;
     margin-left: 1.5em;
