@@ -162,7 +162,7 @@ h2 {
     font-size: 14px;
   }
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 710px) {
   /* line 46, ../_sass/_header.scss */
   .header .my-info img {
     width: 4em;
@@ -379,7 +379,7 @@ h2 {
   margin-left: -2em;
   margin-bottom: 2em;
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 710px) {
   /* line 69, ../_sass/screen.scss */
   .carousel {
     margin-left: 0;
@@ -398,7 +398,7 @@ h2 {
     height: auto;
   }
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 710px) {
   /* line 79, ../_sass/screen.scss */
   .welcome-img {
     height: auto;
