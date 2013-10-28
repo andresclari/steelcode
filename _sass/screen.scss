@@ -120,7 +120,8 @@ h2 {
   }
 
   p {
-    margin-bottom: 1.3em;
+    margin-top: 1.9em;
+    margin-bottom: 1.5em;
 
     @media screen and (max-width: $width-break3) {
       & img {
@@ -269,7 +270,7 @@ h2 {
 .posts-index {
   & ul li a {
     font-size: 2em;
-    color: $black-color;
+    color: $link-color;
     text-decoration: none;
     line-height: 72px;
   }
