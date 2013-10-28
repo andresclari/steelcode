@@ -436,36 +436,43 @@ h2 {
 .view-content p {
   margin-bottom: 1.3em;
 }
-/* line 126, ../_sass/screen.scss */
+@media screen and (max-width: 480px) {
+  /* line 126, ../_sass/screen.scss */
+  .view-content p img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 133, ../_sass/screen.scss */
 .view-content h1 {
   color: #333333;
   font-size: 4em;
   margin-bottom: 0.7em;
 }
-/* line 133, ../_sass/screen.scss */
+/* line 140, ../_sass/screen.scss */
 .view-content h1, .view-content h2 {
   text-align: left;
 }
-/* line 137, ../_sass/screen.scss */
+/* line 144, ../_sass/screen.scss */
 .view-content strong {
   font-weight: bold;
 }
-/* line 141, ../_sass/screen.scss */
+/* line 148, ../_sass/screen.scss */
 .view-content .meta {
   margin-top: 0.7em;
   margin-bottom: 2.7em;
 }
-/* line 148, ../_sass/screen.scss */
+/* line 155, ../_sass/screen.scss */
 .view-content .post {
   line-height: 24px;
   font-size: 17px;
 }
-/* line 152, ../_sass/screen.scss */
+/* line 159, ../_sass/screen.scss */
 .view-content .post div {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 159, ../_sass/screen.scss */
+/* line 166, ../_sass/screen.scss */
 .view-content .post .highlight {
   background: #383838;
   text-shadow: 0px 0px 1px #383838;
@@ -473,46 +480,46 @@ h2 {
   font-size: 15px;
   font-family: Menlo, Source Code Pro, Consolas, monospace;
 }
-/* line 167, ../_sass/screen.scss */
+/* line 174, ../_sass/screen.scss */
 .view-content .post ul {
   margin-left: 1.5em;
 }
-/* line 169, ../_sass/screen.scss */
+/* line 176, ../_sass/screen.scss */
 .view-content .post ul li {
   list-style: initial;
 }
-/* line 175, ../_sass/screen.scss */
+/* line 182, ../_sass/screen.scss */
 .view-content .post .posts-index .portfolio-posts {
   margin: 0;
 }
-/* line 177, ../_sass/screen.scss */
+/* line 184, ../_sass/screen.scss */
 .view-content .post .posts-index .portfolio-posts li {
   list-style: none;
   float: left;
   margin-right: 3.5em;
 }
-/* line 183, ../_sass/screen.scss */
+/* line 190, ../_sass/screen.scss */
 .view-content .post .posts-index .portfolio-posts li:nth-child(even) {
   margin: 0;
 }
 @media screen and (max-width: 600px), (max-width: 755px), (max-width: 1080px) {
-  /* line 175, ../_sass/screen.scss */
+  /* line 182, ../_sass/screen.scss */
   .view-content .post .posts-index .portfolio-posts {
     width: 19em;
     margin: 0 auto;
   }
-  /* line 193, ../_sass/screen.scss */
+  /* line 200, ../_sass/screen.scss */
   .view-content .post .posts-index .portfolio-posts li {
     margin: 0;
     display: block;
     float: none;
   }
 }
-/* line 202, ../_sass/screen.scss */
+/* line 209, ../_sass/screen.scss */
 .view-content .post .posts-index li a {
   font-size: 14px;
 }
-/* line 205, ../_sass/screen.scss */
+/* line 212, ../_sass/screen.scss */
 .view-content .post .posts-index li a .portfolio-item {
   color: #ad0303;
   border: 12px solid #aaa;
@@ -522,29 +529,29 @@ h2 {
   height: 17em;
   text-align: center;
 }
-/* line 214, ../_sass/screen.scss */
+/* line 221, ../_sass/screen.scss */
 .view-content .post .posts-index li a .portfolio-item:hover {
   border: 12px solid #ddd;
   box-shadow: 0px 0px 9px #333333;
   transition: .5s;
 }
-/* line 221, ../_sass/screen.scss */
+/* line 228, ../_sass/screen.scss */
 .view-content .post .posts-index li a .portfolio-item img {
   display: block;
   height: 13em;
   width: 21em;
 }
-/* line 231, ../_sass/screen.scss */
+/* line 238, ../_sass/screen.scss */
 .view-content .post-share {
   margin-top: 3em;
 }
-/* line 234, ../_sass/screen.scss */
+/* line 241, ../_sass/screen.scss */
 .view-content .post-share h4 {
   font-weight: bold;
   font-size: 17px;
   margin-bottom: 1.5em;
 }
-/* line 241, ../_sass/screen.scss */
+/* line 248, ../_sass/screen.scss */
 .view-content #disqus_thread {
   margin-top: 5em;
 }
@@ -554,38 +561,38 @@ h2 {
     margin-top: 2em;
     margin-left: 1.5em;
   }
-  /* line 249, ../_sass/screen.scss */
+  /* line 256, ../_sass/screen.scss */
   .view-content .carousel {
     text-align: center;
     margin-left: 0;
   }
-  /* line 253, ../_sass/screen.scss */
+  /* line 260, ../_sass/screen.scss */
   .view-content .carousel img {
     width: auto;
     height: 10em;
   }
 }
 
-/* line 263, ../_sass/screen.scss */
+/* line 270, ../_sass/screen.scss */
 .posts-index ul li a {
   font-size: 2em;
   color: #333333;
   text-decoration: none;
   line-height: 72px;
 }
-/* line 270, ../_sass/screen.scss */
+/* line 277, ../_sass/screen.scss */
 .posts-index p {
   line-height: 24px;
 }
 
-/* line 275, ../_sass/screen.scss */
+/* line 282, ../_sass/screen.scss */
 .welcome-text {
   font-size: 20px;
   font-weight: bold;
   line-height: 28px;
 }
 
-/* line 281, ../_sass/screen.scss */
+/* line 288, ../_sass/screen.scss */
 .about-img {
   float: left;
   padding-right: 1.5em;

@@ -121,6 +121,13 @@ h2 {
 
   p {
     margin-bottom: 1.3em;
+
+    @media screen and (max-width: $width-break3) {
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   h1 {
