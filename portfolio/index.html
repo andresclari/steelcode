@@ -3,10 +3,28 @@ layout: page
 title: Portfolio
 ---
 
-<p>
-    These are some of my previous projects so you can get an idea of the kind of
-    work that I do.
-</p>
+<div class="posts-index">
+    <p>
+        These are some of my previous projects so you can get an idea of the kind of
+        work that I do.
+    </p>
+
+    <ul class="portfolio-posts">
+        {% for post in site.categories.portfolio order:descending %}
+
+            <li>
+                <a href="{{ post.url }}">
+                    <div class="portfolio-item">
+                        <img src="/img/portfolio/{{ post.title | remove: ' ' }}.jpg" />
+                        {{ post.title }}
+                    </div>
+                </a>
+            </li>
+
+        {% endfor %}
+    </ul>
+
+</div>
 
 
 

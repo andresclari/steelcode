@@ -15,6 +15,8 @@ $height-break2: 730px;
 $width-break: 820px;
 $width-break2: 600px;
 $width-break3: 480px;
+$width-break4: 755px;
+$width-break5: 1080px;
 
 body, html {
   color: $black-color;
@@ -128,6 +130,14 @@ h2 {
     margin-bottom: 0.7em;
   }
 
+  h1, h2 {
+    text-align: left;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
   & .meta {
     margin: {
       top: 0.7em;
@@ -153,6 +163,69 @@ h2 {
       font-size: 15px;
       font-family: Menlo, Source Code Pro, Consolas, monospace;
     }
+
+    & ul {
+      margin-left: 1.5em;
+      & li {
+        list-style: initial;
+      }
+    }
+
+    & .posts-index {
+      & .portfolio-posts {
+        margin: 0;
+        & li {
+          list-style: none;
+          float: left;
+          margin-right: 3.5em;
+        }
+
+        & li:nth-child(even) {
+          margin: 0;
+        }
+
+        @media screen and (max-width: $width-break2),
+            (max-width: $width-break4), (max-width: $width-break5) {
+
+          width: 19em;
+          margin: 0 auto;
+
+          & li {
+            margin: 0;
+            display: block;
+            float: none;
+          }
+        }
+      }
+    }
+
+    & .posts-index li a {
+      font-size: 14px;
+
+      & .portfolio-item {
+        color: $link-color;
+        border: 12px solid #aaa;
+        border-radius: 9px;
+        transition: .5s;
+        width: 21em;
+        height: 17em;
+        text-align: center;
+
+        &:hover {
+          border: 12px solid #ddd;
+          box-shadow: 0px 0px 9px $black-color;
+          transition: .5s;
+
+        }
+
+        & img {
+          display: block;
+          height: 13em;
+          width: 21em;
+        }
+      }
+    }
+
   }
 
   & .post-share {

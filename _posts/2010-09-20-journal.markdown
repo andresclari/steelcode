@@ -1,0 +1,21 @@
+---
+layout: page
+title:  "Journal"
+date:   2010-09-20 20:36:51
+categories: portfolio
+---
+
+Several changes and bug fixes, including performance optimization of the
+website.
+
+![Worklist](/img/portfolio/{{ page.title | remove: ' ' }}.jpg)
+  
+**What I did:** 
+
+- Performance optimization, reducing site load time from 10s to 2s.
+- Several design implementation tasks for the site's UI.
+- Implemented several popup dialogs to present dynamic complex data from
+  recorded activity on the database to the UI.
+- Implemented a "Status update" feature for users.
+
+

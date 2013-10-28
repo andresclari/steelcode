@@ -1,0 +1,33 @@
+---
+layout: page
+title:  "SendLove"
+date:   2011-03-27 20:36:51
+categories: portfolio
+---
+
+Implemented design, performance optimization, admin panel, etc.
+
+![Worklist](/img/portfolio/{{ page.title | remove: ' ' }}.jpg)
+  
+**What I did:** 
+
+- Implemented design and UI customization.
+- Created a theming jQuery plugin to allow user to them the site to their
+  liking.
+- Created a "word cloud" optimized for presentation on +30 inch screens on
+  halls, meeting rooms and alike, that dynamically adjusted word number and font
+  size for the site's praise messages.
+- Created a live wall for praise messages with auto updating capabilities, and
+  embeddable on different pages.
+- Created a reports interface entirely via ajax using jQuery.
+- Prepared the servers and proprietary software to support international
+  characters, working all the way thorough javascript applications to PHP code
+  on the server to the MySQL databases used.
+- Complete optimization of the website in a 2 week project, that optimized the
+  website's load speed in ±150% and reduced exponentially the server load on
+  required requests per load.
+- Created a control panel with Zend Framework to manage a multi-tentant setup
+  with several servers, payment integration and reporting, user management
+  including from sign up to roles, themes, etc.
+
+

@@ -1,0 +1,24 @@
+---
+layout: page
+title:  "Worklist"
+date:   2010-09-15 20:36:51
+categories: portfolio
+---
+
+Several months of work into the Worklist.net website.
+
+![Worklist](/img/portfolio/{{ page.title | remove: ' ' }}.jpg)
+  
+**What I did:** 
+
+- Report creation with graphic representation with RapahelJS, exporting results
+  to CSV files.
+- PayPal payments data importer.
+- Added several management views that showed advanced statistics of user usage.
+- Improved and added more features to manager roles within the site.
+- Lots of style adjustments, via CSS and jQuery UI.
+- Added several dynamic dialogs enabling cross management of features from
+  different parts of the site.
+- Optimized website speed in ±50%.
+
+
