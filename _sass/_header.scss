@@ -97,7 +97,7 @@
     }
 
     & .facebook {
-      background: inline-image('social/facebook.png', 'image/png') center no-repeat #3b5998;
+      background: url('/img/social/facebook.png') center no-repeat #3b5998;
       border: 1px solid #3B5998;
 
       &:hover {
@@ -106,7 +106,7 @@
     }
 
     & .google {
-      background: inline-image('social/google.png', 'image/png') center no-repeat #C83D20;
+      background: url('/img/social/google.png') center no-repeat #C83D20;
       border: 1px solid #C83D20;
 
       &:hover {
@@ -115,7 +115,7 @@
     }
 
     & .twitter {
-      background: inline-image('social/twitter.png', 'image/png') center no-repeat #55CFF8;
+      background: url('/img/social/twitter.png') center no-repeat #55CFF8;
       border: 1px solid #55CFF8;
 
       &:hover {
@@ -124,7 +124,7 @@
     }
 
     & .github {
-      background: inline-image('social/github.png', 'image/png') center no-repeat #afb6ca;
+      background: url('/img/social/github.png') center no-repeat #afb6ca;
       border: 1px solid #afb6ca;
 
       &:hover {
@@ -133,7 +133,7 @@
     }
 
     & .linkedin {
-      background: inline-image('social/linkedin.png', 'image/png') center no-repeat #005a87;
+      background: url('/img/social/linkedin.png') center no-repeat #005a87;
       border: 1px solid #005a87;
 
       &:hover {
@@ -142,7 +142,7 @@
     }
 
     & .rss {
-      background: inline-image('social/rss.png', 'image/png') center no-repeat #EF7522;
+      background: url('/img/social/rss.png') center no-repeat #EF7522;
       border: 1px solid #EF7522;
 
       &:hover {
