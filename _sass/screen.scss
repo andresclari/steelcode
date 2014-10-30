@@ -20,16 +20,17 @@ $width-break5: 1080px;
 
 body, html {
   color: $black-color;
+  font-family: 'Merriweather', serif;
   font-size: 16px;
 }
 
 
 h1 {
-  font-size: 4em;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 30px;
 }
 
 .logo {
@@ -95,9 +96,7 @@ h2 {
 }
 
 .view-content {
-  font-family: 'Oxygen', sans-serif;
   color: $black-color;
-  text-shadow: 0px 0px 1px #ccc;
   padding-top: 1em;
   margin: {
     left: 22em;
@@ -132,10 +131,9 @@ h2 {
   }
 
   h1 {
-    // font-family: 'Oswald', sans-serif;
     color: $black-color;
-    font-size: 4em;
-    margin-bottom: 0.7em;
+    font-size: 40px;
+    margin-bottom: 14px;
   }
 
   h1, h2 {

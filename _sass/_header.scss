@@ -5,7 +5,6 @@
   background: $black-color;
   color: white;
   text-align: center;
-  box-shadow: 0 0 3px #222;
 
   @media screen and (max-width: $width-break) {
     position: inherit;
@@ -19,14 +18,12 @@
     font-size: 18px;
 
     & h1 {
-      font-family: 'Oswald', sans-serif;
       font-size: 2.7em;
       margin-top: 10px;
       margin-bottom: 15px;
     }
 
     & h3 {
-      font-family: 'Oxygen', sans-serif;
       font-size: 1em;
       line-height: 27px;
     }
@@ -166,7 +163,6 @@
     width: 12em;
 
     & li a {
-      font-family: 'Oxygen', sans-serif;
       font-weight: bold;
       line-height: 26px;
       color: white;
@@ -218,7 +214,6 @@
     bottom: 1em;
     left: 2em;
     text-align: left;
-    font-family: 'Oxygen', sans-serif;
     font-size: 12px;
 
     & span {
