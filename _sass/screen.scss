@@ -111,10 +111,11 @@ h2 {
     text-decoration: none;
 
     &:hover {
-      color: #ccc;
+      color: #777;
+      text-decoration: underline;
     }
     &:visited {
-      color: $link-color;
+      color: darken($link-color, 10);
     }
   }
 

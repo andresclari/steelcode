@@ -1,0 +1,24 @@
+jekyll:
+  name: Jekyll
+
+github:
+  name: Github
+
+computers:
+  name: Computers
+
+doomed:
+  name: Doomed
+
+home:
+  name: Home
+
+linux:
+  name: Linux
+
+political:
+  name: Political
+
+random:
+  name: Random
+

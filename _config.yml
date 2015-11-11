@@ -1,13 +1,13 @@
 name: SteelCode Consulting - Mobile and Web development
 description: Freelance mobile and web developer, specialized in Android, Ruby on Rails, Xamarin solutions, etc.
 url: http://steelcode.net
-markdown: redcarpet
-highlighter: pygments
 timezone: Europe/Madrid
 encoding: UTF-8
 
 permalink: /blog/:year/:month/:day/:title
 paginate: 15
 paginate_path: "blog/page:num"
+
+gems: ["jekyll-paginate"]
 
 exclude: ["serve","Gemfile","Gemfile.lock","Vagrantfile","deploy","ideas.txt"]

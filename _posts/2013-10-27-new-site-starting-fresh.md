@@ -3,6 +3,7 @@ layout: post
 title:  "New site, and starting fresh"
 date:   2013-10-27 14:38:51
 categories: news development
+tags: [jekyll, github]
 ---
 
 I finally got to it, and redesigned and reimplemented the site on a new platform

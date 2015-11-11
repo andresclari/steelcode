@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+ruby '2.2.3'
 
-gem 'jekyll'
-gem 'sass',    '~> 3.2'
-gem 'compass', '~> 0.12'
+gem 'jekyll',  '~> 3.0'
+gem 'jekyll-paginate'
+
+gem 'sass',    '~> 3.4'
+gem 'compass', '~> 1.0'

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,12 +37,18 @@
                 </div>
 
                 <div class="social-sites">
-                    <a class="facebook" href="http://www.facebook.com/andres.clari" title="Facebook">Facebook</a>
-                    <a class="google" href="https://www.google.com/+AndresClari/?rel=author" title="Google +">Google +</a>
                     <a class="twitter" href="http://www.twitter.com/andresClari" title="Twitter">Twitter</a>
                     <a class="github" href="http://github.com/andresclari" title="GitHub">GitHub</a>
-                    <a class="linkedin" href="http://es.linkedin.com/in/andresclari/" title="LinkedIn">LinkedIn</a>
                     <a class="rss" href="/feed.xml" title="RSS">RSS</a>
+                </div>
+
+                <div class="tags-list">
+                  <h3>Tags: </h3>
+                  {% for data_tag_entry in site.data.tags %}
+                    {% assign data_tag_slug = data_tag_entry[0] %}
+                    {% assign data_tag = data_tag_entry[1] %}
+                    <a href="/blog/tag/{{ data_tag_slug }}/">{{ data_tag_slug }}</a>
+                  {% endfor %}
                 </div>
 
                 <div class="navbar">
@@ -57,7 +63,7 @@
                 </div>
 
                 <div class="header-footer">
-                    <span>&copy; 2014 SteelCode Consulting.</span>
+                    <span>&copy; {{ site.time | date: '%Y' }} SteelCode Consulting.</span>
                     <span>All rights reserved.</span>
                 </div>
             </div>
