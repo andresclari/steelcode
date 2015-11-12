@@ -19,274 +19,298 @@ $width-break4: 755px;
 $width-break5: 1080px;
 
 body, html {
-  color: $black-color;
-  font-family: 'Merriweather', serif;
-  font-size: 16px;
+    color: $black-color;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
 }
 
 
 h1 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 h2 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
-.logo {
-  & img {
-    height: auto;
-    width: 16em;
-    margin-top: 2em;
-  }
 
-  @media screen and (max-width: $width-break) {
-    display: inline-block;
-    vertical-align: middle;
-    
+.logo {
     & img {
-      width: 12em;
-      margin-top: 0;
+        height: auto;
+        width: 16em;
+        margin-top: 2em;
     }
-  }
-  @media screen and (max-width: $width-break3) {
-    & img {
-        width: 10em;
+
+    @media screen and (max-width: $width-break) {
+        display: inline-block;
+        vertical-align: middle;
+
+        & img {
+            width: 12em;
+            margin-top: 0;
+        }
     }
-  }
+    @media screen and (max-width: $width-break3) {
+        & img {
+            width: 10em;
+        }
+    }
 }
 
 @import "header";
 
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 
-  @media screen and (max-width: $width-break) {
-    max-width: inherit;
-    margin: 0;
-  }
+    @media screen and (max-width: $width-break) {
+        max-width: inherit;
+        margin: 0;
+    }
 }
 
 .carousel {
-  margin: {
+    margin: {
     top: -1.5em;
     left: -2em;
     bottom: 2em;
-  }
+}
 
-  @media screen and (max-height: $min-height) {
-    margin-left: 0;
-    text-align: right;
-  }
+    @media screen and (max-height: $min-height) {
+        margin-left: 0;
+        text-align: right;
+    }
 }
 
 .welcome-img {
-  height: 30em;
-  width: 100%;
+    height: 30em;
+    width: 100%;
 
-  @media screen and (max-width: $max-width) {
-    height: auto;
-  }
-  @media screen and (max-height: $min-height) {
-    height: auto;
-    width: 55%;
-  }
+    @media screen and (max-width: $max-width) {
+        height: auto;
+    }
+    @media screen and (max-height: $min-height) {
+        height: auto;
+        width: 55%;
+    }
 }
 
 .view-content {
-  color: $black-color;
-  padding-top: 1em;
-  margin: {
-    left: 22em;
-    right: 1.5em;
-    bottom: 5em;
-  }
-  text-align: justify;
-
-  a {
-    color: $link-color;
-    font-weight: bold;
-    text-decoration: none;
-
-    &:hover {
-      color: #777;
-      text-decoration: underline;
-    }
-    &:visited {
-      color: darken($link-color, 10);
-    }
-  }
-
-  p {
-    margin-top: 1.9em;
-    margin-bottom: 1.5em;
-
-    @media screen and (max-width: $width-break3) {
-      & img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-
-  h1 {
     color: $black-color;
-    font-size: 40px;
-    margin-bottom: 14px;
-  }
-
-  h1, h2 {
-    text-align: left;
-  }
-
-  strong {
-    font-weight: bold;
-  }
-
-  & .meta {
+    padding-top: 1em;
     margin: {
-      top: 0.7em;
-      bottom: 2.7em;
+        left: 22em;
+        right: 1.5em;
+        bottom: 5em;
     }
-  }
+    text-align: justify;
 
-  & .post {
-    line-height: 24px;
-    font-size: 17px;
-
-    & div {
-      margin: {
-        top: 1.5em;
-        bottom: 1.5em;
-      }
-    }
-
-    & .highlight {
-      background: #383838;
-      text-shadow: 0px 0px 1px #383838;
-      padding: 0.7em;
-      font-size: 15px;
-      font-family: Menlo, Source Code Pro, Consolas, monospace;
-    }
-
-    & ul {
-      margin-left: 1.5em;
-      & li {
-        list-style: initial;
-      }
-    }
-
-    & .posts-index {
-      & .portfolio-posts {
-        margin: 0;
-        & li {
-          list-style: none;
-          float: left;
-          margin-right: 3.5em;
-        }
-
-        & li:nth-child(even) {
-          margin: 0;
-        }
-
-        @media screen and (max-width: $width-break2),
-            (max-width: $width-break4), (max-width: $width-break5) {
-
-          width: 19em;
-          margin: 0 auto;
-
-          & li {
-            margin: 0;
-            display: block;
-            float: none;
-          }
-        }
-      }
-    }
-
-    & .posts-index li a {
-      font-size: 14px;
-
-      & .portfolio-item {
+    a {
         color: $link-color;
-        border: 12px solid #aaa;
-        border-radius: 9px;
-        transition: .5s;
-        width: 21em;
-        height: 17em;
-        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
 
         &:hover {
-          border: 12px solid #ddd;
-          box-shadow: 0px 0px 9px $black-color;
-          transition: .5s;
+            color: #777;
+            text-decoration: underline;
+        }
+        &:visited {
+            color: darken($link-color, 10);
+        }
+    }
 
+    p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: $width-break3) {
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    h1 {
+        color: $black-color;
+        font-size: 40px;
+        margin-bottom: 14px;
+    }
+
+    h1, h2 {
+        text-align: left;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    & .meta {
+        margin: {
+            top: 0.7em;
+            bottom: 26px;
+        }
+    }
+
+    & .post {
+        line-height: 24px;
+        font-size: 17px;
+
+        & div {
+            margin: {
+            top: 1.5em;
+            bottom: 1.5em;
+        }
         }
 
-        & img {
-          display: block;
-          height: 13em;
-          width: 21em;
+        & .highlight {
+            background: #383838;
+            text-shadow: 0px 0px 1px #383838;
+            padding: 0.7em;
+            font-size: 15px;
+            font-family: Menlo, Source Code Pro, Consolas, monospace;
+            margin-bottom: 15px;
         }
-      }
+
+        & ul {
+            margin-left: 1.5em;
+            & li {
+                list-style: initial;
+            }
+        }
+
+        & .posts-index {
+            & .portfolio-posts {
+                margin: 0;
+                & li {
+                    list-style: none;
+                    float: left;
+                    margin-right: 3.5em;
+                }
+
+                & li:nth-child(even) {
+                    margin: 0;
+                }
+
+                @media screen and (max-width: $width-break2),
+                (max-width: $width-break4), (max-width: $width-break5) {
+
+                                                width: 19em;
+                                                margin: 0 auto;
+
+                                                & li {
+                                                    margin: 0;
+                                                    display: block;
+                                                    float: none;
+                                                }
+                                            }
+            }
+        }
+
+        & .posts-index li a {
+            font-size: 14px;
+
+            & .portfolio-item {
+                color: $link-color;
+                border: 12px solid #aaa;
+                border-radius: 9px;
+                transition: .5s;
+                width: 21em;
+                height: 17em;
+                text-align: center;
+
+                &:hover {
+                    border: 12px solid #ddd;
+                    box-shadow: 0px 0px 9px $black-color;
+                    transition: .5s;
+
+                }
+
+                & img {
+                    display: block;
+                    height: 13em;
+                    width: 21em;
+                }
+            }
+        }
+
     }
 
-  }
+    & .post-share {
+        margin-top: 3em;
 
-  & .post-share {
-    margin-top: 3em;
-
-    & h4 {
-      font-weight: bold;
-      font-size: 17px;
-      margin-bottom: 1.5em;
+        & h4 {
+            font-weight: bold;
+            font-size: 17px;
+            margin-bottom: 1.5em;
+        }
     }
-  }
 
-  & #disqus_thread {
-    margin-top: 5em;
-  }
-
-  @media screen and (max-width: $width-break) {
-    margin-top: 2em;
-    margin-left: 1.5em;
-
-    & .carousel {
-      text-align: center;
-      margin-left: 0;
-
-      & img {
-        width: auto;
-        height: 10em;
-      }
+    & #disqus_thread {
+        margin-top: 5em;
     }
-  }
+
+    @media screen and (max-width: $width-break) {
+        margin-top: 2em;
+        margin-left: 1.5em;
+
+        & .carousel {
+            text-align: center;
+            margin-left: 0;
+
+            & img {
+                width: auto;
+                height: 10em;
+            }
+        }
+    }
 }
 
 
 .posts-index {
-  & ul li a {
-    font-size: 2em;
-    color: $link-color;
-    text-decoration: none;
-    line-height: 72px;
-  }
+    & ul li a {
+        font-size: 2em;
+        color: $link-color;
+        text-decoration: none;
+        line-height: 72px;
+    }
 
-  & p {
-    line-height: 24px;
-  }
+    & p {
+        line-height: 24px;
+    }
 }
 
 .welcome-text {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
 }
 
 .about-img {
-  float: left;
-  padding-right: 1.5em;
+    float: left;
+    padding-right: 1.5em;
 }
 
+blockquote {
+    border-left: 4px solid #DDDDDD;
+    color: #666666;
+    padding: 0 15px;
+}
+
+
+.post {
+    & h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    & ol,ul {
+        padding-left: 1.5em;
+        list-style: initial;
+    }
+}

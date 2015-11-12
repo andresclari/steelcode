@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
-bundle exec jekyll serve -w --port 3000
+jekyll serve -D --port 3000
