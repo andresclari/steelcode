@@ -3,7 +3,7 @@ description: Freelance mobile and web developer, specialized in Android, Ruby on
 url: http://steelcode.net
 timezone: Europe/Madrid
 encoding: UTF-8
-highlighter: rouge
+highlighter: pygments
 
 permalink: /blog/:year/:month/:day/:title
 paginate: 15
