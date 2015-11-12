@@ -16,6 +16,9 @@ home:
 linux:
   name: Linux
 
+tv:
+  name: TV
+
 political:
   name: Political
 
