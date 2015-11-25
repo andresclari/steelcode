@@ -2,5 +2,6 @@
 .sass-cache
 
 _site
+_drafts
 serve
 deploy

@@ -199,16 +199,14 @@ h2 {
 
                 @media screen and (max-width: $width-break2),
                 (max-width: $width-break4), (max-width: $width-break5) {
-
-                                                width: 19em;
-                                                margin: 0 auto;
-
-                                                & li {
-                                                    margin: 0;
-                                                    display: block;
-                                                    float: none;
-                                                }
-                                            }
+                    width: 19em;
+                    margin: 0 auto;
+                    & li {
+                        margin: 0;
+                        display: block;
+                        float: none;
+                    }
+                }
             }
         }
 
@@ -273,11 +271,20 @@ h2 {
 
 
 .posts-index {
-    & ul li a {
-        font-size: 2em;
-        color: $link-color;
-        text-decoration: none;
-        line-height: 72px;
+    & ul li {
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        & a {
+            font-size: 2em;
+            color: $link-color;
+            text-decoration: none;
+        }
+
+        & p a {
+            font-size: initial;
+            line-height: initial;
+        }
     }
 
     & p {

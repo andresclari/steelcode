@@ -28,3 +28,9 @@ random:
 rants:
   name: Rants
 
+windows:
+  name: Windows
+
+ui:
+  name: UI
+
