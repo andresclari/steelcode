@@ -3,50 +3,49 @@ layout: default
 ---
 {% assign post = page %}
 {% if post.tags.size > 0 %}
-  {% capture tags_content %}Tags {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+	{% capture tags_content %}Tags {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
 
-  {% for post_tag in post.tags %}
+	{% for post_tag in post.tags %}
 
-    {% for data_tag_entry in site.data.tags %}
-      {% assign data_tag_slug = data_tag_entry[0] %}
-      {% if data_tag_slug == post_tag %}
-        {% assign tag = data_tag_slug %}
-      {% endif %}
-    {% endfor %}
+		{% for data_tag_entry in site.data.tags %}
+			{% assign data_tag_slug = data_tag_entry[0] %}
+			{% if data_tag_slug == post_tag %}
+				{% assign tag = data_tag_slug %}
+			{% endif %}
+		{% endfor %}
 
-    {% if tag %}
-      {% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag }}/">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
-      {% assign tags_content = tags_content_temp %}
-    {% endif %}
-  {% endfor %}
+		{% if tag %}
+			{% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag }}/">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+			{% assign tags_content = tags_content_temp %}
+		{% endif %}
+	{% endfor %}
 
 {% else %}
-  {% assign tags_content = '' %}
+	{% assign tags_content = '' %}
 {% endif %}
 
 <div class="view-content">
-    <h1>{{ page.title }}</h1>
+	<h1>{{ page.title }}</h1>
 
-    <p class="meta">{{ page.date | date_to_string }}<br> {{ tags_content }}</p>
+	<p class="meta">{{ page.date | date_to_string }}<br> {{ tags_content }}</p>
 
-    <div class="post">
+	<div class="post">
 
-        {{ content }}
+		{{ content }}
 
-    </div>
+	</div>
 
-    <div class="post-share"></div>
+	<div class="post-share"></div>
 
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'steelcode';
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		var disqus_shortname = 'steelcode';
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
-

@@ -1,23 +1,23 @@
 ---
-layout: blog 
+layout: blog
 title: Blog
 ---
 
 <div class="view-content">
-    <div class="posts-index">
-        <h1>Blog</h1>
+	<div class="posts-index">
+		<h1>Blog</h1>
 
-        <ul class="posts">
-            {% for post in site.posts %}
+		<ul class="posts">
+			{% for post in site.posts %}
 
-                {% unless post.categories contains "portfolio" %}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                        <p>{{ post.excerpt }}</p>
-                    </li>
-                {% endunless %}
+				{% unless post.categories contains "portfolio" %}
+					<li>
+						<a href="{{ post.url }}">{{ post.title }}</a>
+						<p>{{ post.excerpt }}</p>
+					</li>
+				{% endunless %}
 
-            {% endfor %}
-        </ul>
-    </div>
+			{% endfor %}
+		</ul>
+	</div>
 </div>
